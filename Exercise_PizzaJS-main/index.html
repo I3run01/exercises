@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projto Pizza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Pizzas</h1>
+    </nav>
+
+    <main id="container">
+    </main>
+
+    <aside>
+        <div id="AsideMenuPC" onclick="AsideMenuPC()" value="notfull">&#x25C0</div>
+        <div value="notfull" id="AsideMenu" onclick="AsideMenu()"> <p>&#x2630</p></div>
+        <h1>Suas Pizzas</h1>
+        <div id="lpizzas">
+        </div>
+        <div class="conta">
+            <p>Subtotal:</p>
+            <p id="subtotal">R$ 0.00</p>
+        </div>
+        <div class="conta">
+            <p>Desconto (-10%)</p>
+            <p id="desconto"> R$ 0.000</p>
+        </div>
+        <div id="TotalDiv">
+            <p>Total</p>
+            <p id="ValorTotalAside">R$ 0.00</p>
+        </div>
+        <button>Finalizar a compra</button>
+    </aside>
+
+    <article id="detpizza">
+        <div id="DetPizzaDiv">
+            <div>
+                <h1 id="detpizzaNome">Nome Pizza</h1>
+                <p><img id="detpizzaimg" src="imagens/pizza.png" alt=""></p>
+                <p id="detpizzaDescricao">descricao</p>
+                <div>
+                    <h2>Tamanho</h2>
+                    <div id="DetPizzaDivBTNT">
+                        <button class="btnt01" onclick="PizzaTamanho('p', this.value)">P <span>100g</span></button>
+                        <button class="btnt02" onclick="PizzaTamanho('m', this.value)">M <span>530g</span></button>
+                        <button class="btnt03" onclick="PizzaTamanho('g', this.value)">G <span>830g</span></button>
+                    </div>
+                    
+                </div>    
+                <div id="detpizzaprecoDiv">
+                    <p id="detpizzapreco"> R$ 00.00</p>
+                    <div>
+                        <div value = 'nd' id="detpizzaprecoDivTP" onclick="tirarPizza(this.value)">-</div>
+                        <div class="detpizzasQuantidades">0</div>
+                        <div value = 'nd' id="detpizzaprecoDivCP" onclick="colocarPizza(this.value)">+</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <button onclick="AdicionarCarrinho()" >Adicionar ao carrinho</button>
+            <button onclick="CarcelarPizza()">Voltar</button>
+            
+        </div>
+    </article>
+
+    <img src="" alt="">
+
+    <script src="ClassPizza.js"></script>
+    <script src="layoutMain.js"></script>
+    <script src="detpizza.js"></script>
+    <script src="Aside.js"></script>
+</body>
+</html>

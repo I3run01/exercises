@@ -1,0 +1,360 @@
+@charset "UTF-08";
+
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "nav nav"
+    "aside aside"
+    "main main"
+    ;
+
+    margin: 0px;
+    background-color: rgb(250, 250, 250);
+}
+
+nav {
+    grid-area: nav;
+    padding-top: 10px;
+    margin: 0;
+    background-color: black;
+    height: 40px;
+
+
+}
+
+nav h1 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+main > div {
+    margin-top: 40px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.317);
+
+
+}
+
+main > div > div {
+    position: relative;
+}
+
+main  img {
+    text-align: center;
+    margin: 10px;
+    width: 150px;
+}
+
+
+main button {
+    font-size: 2em;
+    position: absolute;
+    top: 150px;
+    left: 130px;
+    background-color: rgb(125, 251, 255);
+    border-radius: 50%;
+    border: none;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+main button:hover {
+    background-color: rgb(0, 196, 203);
+    cursor: pointer;
+    
+}
+
+main p {
+    margin: 20px;
+}
+
+aside {
+    grid-area: aside;
+    display: none;
+    height: 5vh;
+    padding: 20px;
+    background-color: aquamarine;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.483);
+    overflow-y: hidden;
+
+}
+
+#AsideMenu {
+    margin: 0vh auto 2.5vh auto;
+    font-size: 2.5vh;
+    cursor: pointer;   
+}
+
+#AsideMenuPC {
+    display: none;
+}
+
+aside h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#lpizzas {
+    max-height: 15vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#lpizzas img {
+    width: 8vw;
+}
+
+#lpizzas > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.535);
+
+
+    
+}
+
+#lpizzas > div > div {
+    display: flex;
+    background-color: rgba(207, 206, 206, 0.839);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+#lpizzas > div > div > div {
+    margin: auto 10px auto 10px;
+    cursor: pointer;
+}
+
+.conta {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.377);
+}
+
+#TotalDiv {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+aside button {
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    font-size: 1.2em;
+    margin-left: 10%;
+}
+
+
+
+#detpizza {
+    display: none;
+    top: 0px;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.461);
+    font-size: 3vh;
+}
+
+#DetPizzaDiv {
+    position: fixed;
+    min-height: 95vh;
+    width: 80vw;
+    background-color: rgb(210, 244, 255);
+    top: 2vh;
+    left: 10vw;
+    display: block;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.234);
+}
+
+#DetPizzaDiv > div {
+    max-width: 55vw;
+    margin: auto;
+}
+
+#DetPizzaDiv img {
+    width: 35vw;
+    margin: auto;
+}
+
+#DetPizzaDiv button {
+    height: 6vh;
+    cursor: pointer;
+}
+
+#DetPizzaDiv button:hover {
+    background-color: aquamarine;
+    /*background-color: rgb(62, 242, 255);*/
+}
+
+#DetPizzaDivBTNT {
+    display: flex;
+    justify-content: center;
+}
+
+.btnt01 {
+    border-right: 0;
+    border-radius: 20px 0 0 20px;
+    margin: 0;
+}
+
+.btnt02 {
+    border-left: 0;
+    border-right: 0;
+    margin: 0;
+}
+
+.btnt03 {
+    border-left: 0;
+    border-radius: 0 20px 20px 0; 
+    margin: 0;
+
+}
+
+#detpizzaprecoDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.tam {
+    height: 5vh;
+    width: 30vw;
+    cursor: pointer;
+}
+
+
+#detpizzaprecoDiv > div {
+    display: flex;
+    width: 15vw;
+    justify-content: space-between;
+    background-color: rgba(197, 194, 194, 0.567);
+    padding: 2vh;
+    border-radius: 20px;
+}
+
+#detpizzaprecoDiv > div:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        grid-template-columns: auto 50px;
+        grid-template-areas: 
+        "nav nav"
+        "main aside"
+    ;
+    }
+
+    main {
+        justify-content: space-around;
+    }
+
+    main > div {
+        margin: 10px;
+
+    }
+
+    aside {
+        height: 550px;
+        margin-right: 0;
+        overflow-x: hidden;
+    }
+
+    
+
+    aside > div, aside > h1, aside > button {
+        margin-left: 50px;
+    }
+
+    #AsideMenuPC {
+        margin: 0;
+    }
+
+    #AsideMenuPC:hover {
+        cursor: pointer;
+    }
+
+    #AsideMenu {
+        display: none;
+    }
+
+    #AsideMenuPC {
+        display: block;
+    }
+
+    #lpizzas > *{
+        padding: 10px;
+    }
+
+    #lpizzas img {
+        width: 50px;
+    }
+
+    #detpizza {
+        font-size: 1.2em;
+        margin-right: 0;
+
+    }
+
+    #DetPizzaDiv {
+        max-width: 800px;
+        height: auto;
+        
+    }
+
+    #DetPizzaDiv img {
+        width: 250px;
+    }
+    
+    #detpizzaprecoDiv {
+        margin: 20px;
+        justify-content: center;
+    }
+
+    #detpizzaprecoDiv > div {
+        width: 90px;
+        margin: auto 20px auto 20px;
+
+    }
+
+
+    #detpizzaprecoDiv > div > div {
+        width: 20px;
+
+    }
+
+   
+
+    
+}
+

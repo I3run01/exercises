@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+ 
+
+
+
+header {
+    max-width: 602px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+    min-height: 150px;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+header h1 {
+    margin: 0px;
+    font-family: 'passion';
+    font-size: 5vh;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: 'passion';
+    font-size: 1.5vh;
+
+}
+
+span {
+    font-weight: bolder;
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+
+    max-width: 600px;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.527);
+}
+
+main p { 
+    margin: 0px;
+    padding: 50px 20px 50px 20px;
+    font-family: 'Sriracha';
+    font-size: 2vh;
+}
+
+#img {
+    background-color: black;
+    position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+    margin: 0px;
+    background-image: url(pacote-d012/imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right ;
+    background-attachment: fixed;
+    height: 60vh;
+
+}
+
+#img2 {
+    background-color: black;
+    position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+    margin: 0px;
+    background-image: url(pacote-d012/imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right ;
+    background-attachment: fixed;
+    height: 60vh;
+ 
+
+}
+
+div {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.212);
+    position: absolute;
+    padding: 1%;
+    transform: translateY(-50%);
+    top: 50%;
+    max-width: 300px;
+    height: 50vh;
+
+}
+
+article {
+    margin: 0px;
+}
